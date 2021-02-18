@@ -1,0 +1,114 @@
+.select-box {
+	position: relative;
+	width: 259px;
+	height: 56px;
+	color: #111111;
+	background-color: #ffffff;
+	border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+	transition: 0.2s;
+	&:hover {
+		box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 24px rgba(51, 51, 51, 0.24);
+		transition: 0.2s;
+	}
+	&:focus {
+		box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 24px rgba(51, 51, 51, 0.24);
+		transition: 0.2s;
+	}
+    @media (min-width: 767px) and (max-width: 1366px) {
+		width: calc(225px + (259 - 225) * ((100vw - 767px) / (1366 - 767)));
+	}
+	@media (min-width: 470px) and (max-width: 767px) {
+		width: calc(200px + (225 - 200) * ((100vw - 470px) / (767 - 470)));
+	}
+	@media (max-width: 470px) {
+        width: 100%;
+    }
+	&__current {
+		width: 100%;
+        height: 100%;
+		position: relative;
+        padding: 6px 10px 6px 16px;
+		cursor: pointer;
+        .p3 {
+            position: absolute;
+            color: rgba(17, 17, 17, 0.48);
+            left: 16px;
+            top: 20px;
+			transition: 0.1s;
+        }
+		&_active { 
+			+ .select-box__list {
+				opacity: 1;
+				z-index: 10;
+				box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 14px 24px rgba(51, 51, 51, 0.12);
+				transition: 0.3s;
+			}
+			.select-box__icon {
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+		button {
+			background-color: transparent;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			right: 40px;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 15;
+			transition: 0.3s;
+			&:hover {
+				transform: translateY(-50%) rotate(90deg);
+				transition: 0.3s;
+			}
+		}
+	}
+	&__icon {
+        width: 24px;
+        height: 24px;
+		position: absolute;
+		top: 50%;
+		right: 12px;
+		transform: translateY(-50%);
+		transition: 0.2s ease;
+	}
+	&__value {
+		width: 100%;
+        position: relative;
+        bottom: -20px;
+	}
+	&__input {
+		display: none;
+		&:checked {
+			+ .select-box__input-text {
+				display: block;
+			}
+		}
+		&-text {
+			display: none;
+			width: 100%;
+			margin: 0;
+		}
+	}
+	&__list {
+		position: absolute;
+        width: 100%;
+        left: 0;
+		opacity: 0;
+		z-index: -5;
+		top: 60px;
+		border-radius: 4px;
+		transition: 0.3s;
+	}
+	&__option {
+		display: block;
+        padding: 8px 16px;
+		cursor: pointer;
+		width: 100%;
+		background-color: #FDFDFD;
+		&:hover, &:focus {
+			background: #F1F1F1;
+		}
+	}
+}

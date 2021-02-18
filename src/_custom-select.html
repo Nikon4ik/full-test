@@ -1,0 +1,39 @@
+<div class="select-box">
+    <div class="select-box__current" onclick="Current(event)">
+        <p class="p3">Your country</p>
+        <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="0" value="1" name="country"/>
+            <p class="select-box__input-text">Ukraine</p>
+        </div>
+        <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="1" value="2" name="country"/>
+            <p class="select-box__input-text">USA</p>
+        </div>
+        <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="2" value="3" name="country"/>
+            <p class="select-box__input-text">Poland</p>
+        </div>
+        <div class="select-box__value">
+            <input class="select-box__input" type="radio" id="3" value="4" name="country"/>
+            <p class="select-box__input-text">United Kingdom</p>
+        </div>
+        <button onclick="Remove(event)">
+            <img class="select-box__close-button" src="./img/icons/close.svg" alt="close">
+        </button>
+        <img class="select-box__icon" src="./img/icons/arrow-down.svg" alt="arrow">
+    </div>
+    <ul class="select-box__list">
+        <li class="select-box__item" onclick="Select(event)">
+            <label class="select-box__option" for="0">Ukraine</label>
+        </li>
+        <li class="select-box__item" onclick="Select(event)">
+            <label class="select-box__option" for="1">USA</label>
+        </li>
+        <li class="select-box__item" onclick="Select(event)">
+            <label class="select-box__option" for="2">Poland</label>
+        </li>
+        <li class="select-box__item" onclick="Select(event)">
+            <label class="select-box__option" for="3">United Kingdom</label>
+        </li>
+    </ul>
+</div>

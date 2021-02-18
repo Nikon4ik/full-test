@@ -1,0 +1,119 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.col-1-2{width: 50%;}
+.col-1-3{width: 33.33%;}
+.col-2-3{width: 66.66%;}
+.col-1-4{width: 25%;}
+.col-3-4{width: 75%;}
+.col-1-5{width: 20%;}
+.col-1-6{width: 16.67%;}
+.col-5-6{width: 83.33%;}
+.col-1-7 {width: 14.29%;}
+.col-1-8 {width: 12.5%;}
+.col-1-9 {width: 11.11%;}
+.col-1-10 {width: 10%;}
+.col-4-5 {width: 80%;}
+.col-9-10 {width: 90%;}
+
+.p2 {
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 24px;
+	@media (max-width: 1366px) {
+		font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1366 - 320)));
+		line-height: calc(16px + (24 - 16) * ((100vw - 320px) / (1366 - 320)));
+	}
+	@media (max-width: 767px) {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+.p3 {
+	font-family: Roboto;
+	font-size: 13px;
+	line-height: 20px;
+	@media (max-width: 1366px) {
+		font-size: calc(7px + (13 - 7) * ((100vw - 320px) / (1366 - 320)));
+		line-height: calc(12px + (20 - 12) * ((100vw - 320px) / (1366 - 320)));
+	}
+	@media (max-width: 767px) {
+		font-size: 11px;
+		line-height: 17px;
+	}
+}
+.h3 {
+	font-family: Montserrat;
+	font-size: 40px;
+	line-height: 48px;
+	@media (max-width: 1366px) {
+		font-size: calc(34px + (40 - 34) * ((100vw - 320px) / (1366 - 320)));
+		line-height: calc(40px + (48 - 40) * ((100vw - 320px) / (1366 - 320)));
+	}
+	@media (max-width: 767px) {
+		font-size: 28px;
+		line-height: 34px;
+	}
+}
+.h4 {
+	font-family: Montserrat;
+	font-size: 32px;
+	line-height: 40px;
+	@media (max-width: 1366px) {
+		font-size: calc(26px + (32 - 26) * ((100vw - 320px) / (1366 - 320)));
+		line-height: calc(32px + (40 - 32) * ((100vw - 320px) / (1366 - 320)));
+	}
+	@media (max-width: 767px) {
+		font-size: 28px;
+		line-height: 34px;
+	}
+}
+.h5 {
+	font-family: Montserrat;
+	font-size: 24px;
+	line-height: 32px;
+	@media (max-width: 1366px) {
+		font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1366 - 320)));
+		line-height: calc(24px + (32 - 24) * ((100vw - 320px) / (1366 - 320)));
+	}
+	@media (max-width: 767px) {
+		font-size: 22px;
+		line-height: 26px;
+	}
+}
+.h6 {
+	font-family: Montserrat;
+	font-size: 20px;
+	line-height: 28px;
+	@media (max-width: 1366px) {
+		font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1366 - 320)));
+		line-height: calc(20px + (28 - 20) * ((100vw - 320px) / (1366 - 320)));
+	}
+	@media (max-width: 767px) {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+::-webkit-input-placeholder {color: rgba(17, 17, 17, 0.48); font-family: Roboto; font-size: 16px; line-height: 24px;}
+::-moz-placeholder {color: rgba(17, 17, 17, 0.48); font-family: Roboto; font-size: 16px; line-height: 24px;}
+:-ms-input-placeholder {color: rgba(17, 17, 17, 0.48); font-family: Roboto; font-size: 16px; line-height: 24px;}
+:-moz-placeholder {color: rgba(17, 17, 17, 0.48); font-family: Roboto; font-size: 16px; line-height: 24px;}
